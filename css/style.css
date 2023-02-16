@@ -1,19 +1,31 @@
 /* Homepage */
+
+/* Header */
 Body {
     background-color: #F6EEE5;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-style: medium;
+    font-weight: 500;
     color: #222E4A; 
+    width: 1728px;
 }
 
 nav {
-    display: inline-block
-    width auto;
+    display: inline-block;
+    width: 73%;
     height: 126px;
-    padding: 4px;
+    padding: 1%;
+}
+
+.logo, .topNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .logo {
+    display: flex;
     position: absolute;
     width: 126px;
     height: 73px;
@@ -22,148 +34,184 @@ nav {
     bottom: 5px;
   }
 
-
-
-.inline-block {
-    display: inline-block;
-    padding: 136px;
-    position: relative;
-    width: 68px;
-    height: 35px;
-    font-weight: 500;
+.topNav{
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 600px;
     font-size: 24px;
     line-height: 30px;
-
+   
 }
 
-.inline-block Home {
-    left: 877px;
-    top: 74px;
-}
+.topNav a {
+    vertical-align: top;
+    padding: 100px;
+    color: #222E4A;
+    text-decoration: none;
 
-
-.inline-block About {
-    
-    left: 1082px;
-    top: 74px;
-    
-}
-
-.inline-block Projects {
-
-    left: 1288px;
-    top: 74px;
-    
-}
-
-.inline-block Contact {
-    
-    left: 1518px;
-    top: 74px;
 }
 
 
 /* hero section */
 
 .eleFoot {
+    display: flex;
     position: absolute;
-    width: 1728px;
-    height: 884px;
     left: 0px;
     top: 126px;
-    background-image: url("images/bkgrnd repeat 50.2 .png");
+    width: 100%;
+}
 
+.left img{
+    display: flex;
+    position: absolute;
+    width: 732px;
+    height: 263px;
+    left: 246px;
+    top: 408px;
 }
 
 /* Download CV */
 
 .left button {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
-    align-items: flex-start;
     padding: 18px 25px;
     gap: 10px;
+    text-align: center;
     
     position: absolute;
     width: 203px;
     height: 56px;
-    left: 238px;
+    left: 246px;
+    right: 1279px;
     top: 671px;
     
     background: #222E4A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30.53px;
+
+    font-family: 'Quicksand';
+    font-style: medium;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: #F6EEE5;
     
-     /* Inside auto layout */
-     flex: none;
-     order: 0;
-     flex-grow: 0;
-    
-     font-family: 'Quicksand';
-     font-style: medium;
-     font-weight: 500;
-     font-size: 24px;
-     line-height: 20px;
-     /* identical to box height, or 83% */
-    
-    
-     color: #F6EEE5;
-    
+/* identical to box height, or 83% */
     
     }
     
-    .left{
-        position: absolute;
-        width: 732px;
-        height: 263px;
-        left: 246px;
-        top: 408px;
-    }
+   
 
 /* image of self*/
 
-.right {
-position: absolute;
-width: 604.58px;
-height: 621px;
-left: 1002px;
-top: 257px;
-
-filter: drop-shadow(0px 3.30371px 3.30371px rgba(0, 0, 0, 0.25));
-}
-
-/* section*/
-.projects {
+.right img{
+    display: flex;
     position: absolute;
-    width: 1728px;
-    height: 2097px;
-    left: 0px;
-    top: 1010px;
-    padding-left:2em;
-  padding-right:2em;
+    width: 604.58px;
+    height: 621px;
+    left: 1002px;
+    top: 257px;
+
+    filter: drop-shadow(0px 3.30371px 3.30371px rgba(0, 0, 0, 0.25));
+    }
+
+/* project styles*/
+.projects {
+    width: 100%;
+    margin: 0 auto;
 
 }
+
+.projects img{
+    position: absolute;
+    text-align: center;
+    color: #222E4A;
+    width: 469px;
+    height: 102px;
+    left: 123.56px;
+    top: 740px;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    transform: rotate(2.6deg);
+
+}
+
+.htext {
+position: absolute;
+ width: 276px;
+ height: 110px;
+ left: 202px;
+ top: 900px;
+ 
+ font-family: 'Cheddar Jack';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 136px;
+ line-height: 136px;
+ 
+ color: #222E4A;
+ 
+ text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+   }
 
 .allprojects {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 1236px;
+    left: 363px;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    
+    
 }
 
-h1 {
+.project1, .project2, .project3 {
+    display: flex;
+    width: 994px;
+    height: 525px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    text-align: left;
+  
+}
+
+.project1 {
+    margin-top:20px;
+    background: #CDA5AD;
+    border: 0.787639px solid #222E4A;
+    box-shadow: 7.87639px 7.87639px 6.30111px rgba(0, 0, 0, 0.5);
+
+}
+
+.project2 {
+    background: #F2D8CE;
+    border: 0.787639px solid #222E4A;
+    box-shadow: 7.87639px 7.87639px 6.30111px rgba(0, 0, 0, 0.5);
+
+}
+
+.project3 {
+    background: #D29431;
+    border: 0.787639px solid #222E4A;
+    box-shadow: 7.87639px 7.87639px 6.30111px rgba(0, 0, 0, 0.5);
+}
+
+
+
+h2 {
     width: 407.5px;
     height: 75px;
-
-    font-family: 'Caveat Brush';
+    font-family: 'Caveat Brush', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 150%;
     /* identical to box height, or 75px */
 
-
     color: #222E4A;
-
 
     /* Inside auto layout */
 
@@ -171,6 +219,8 @@ h1 {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    padding-left: 50px;
+    top: 112px;
 
 }
 
@@ -198,43 +248,6 @@ flex-grow: 0;
 
 }
 
-
-.project1, .project2, .project3{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 994px;
-    height: 525.36px;
-    left: 363px;
-    top: 1236.6px;
-    padding: 20px;
-    margin-top: 20px;
-
-    border: 0.787639px solid #222E4A;
-    box-shadow: 7.87639px 7.87639px 6.30111px rgba(0, 0, 0, 0.5);
-
-
-}
-
-
-.project1 {
-    
-    background: #CDA5AD;
-
-}
-    
-
-.project2 {
-
-    background: #F2D8CE;
-
-}
-
-.project3 {
-
-    background: #D29431;
-
-}
 
 
 /* footer*/
@@ -297,6 +310,8 @@ display: flex;
 align-items: center;
 
 color: #222E4A;
+font-family: 'Quicksand', sans-serif;
+
 
 }
 
