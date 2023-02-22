@@ -6,53 +6,68 @@ Body {
     font-style: medium;
     font-weight: 500;
     color: #222E4A; 
-    
+    padding-top: 60px;
 }
-header {
-    background: #F6EEE5;
-    overflow-y: scroll;
-    height: 126px;
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fixed-header {
+    background-color: #F6EEE5;
+    border-bottom-style: solid;
+    border-bottom-color: #CDA5AD;
+    position: fixed;      
+    color: #222E4A; 
     width: 100%;
-    position: fixed;
+    height: 126px;
     top: 0px;
     left: 0px;
+    z-index: 1;
+    text-align: right;
 }
 
-.logo, .topNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.logo {
-    display: flex;
+.container img {
     position: absolute;
     width: 126px;
     height: 73px;
-    left: 120px;
     top: 50px;
+    left: 120px;
     bottom: 5px;
   }
 
-.topNav{
-    display: flex;
-    position: absolute;
-    top: -30px;
-    left: 600px;
+
+
+nav a{
+    position: relative;
+    color: #222E4A;
+    text-decoration: none;
+    display: inline-block;
+    padding: 75px 45px;
     font-size: 24px;
-    line-height: 30px;
+
    
 }
 
-.topNav a {
-    vertical-align: top;
-    padding: 100px;
-    color: #222E4A;
-    text-decoration: none;
+nav a:hover {
+    background-image: url(/images/ltpk_rectangle.png);
+    background-size: 225px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    width: fit-content;
+    filter: drop-shadow(0px 3.30371px 3.30371px #F2D8CE);
 
-}
+  }
 
+nav a:active {
+    background-image: url(/images/dk_pk_rectangle.png);
+    background-size: 225px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    filter: drop-shadow(0px 3.30371px 3.30371px #CDA5AD);
+
+  }
 
 /* hero section */
 .heroBackground {
@@ -107,6 +122,20 @@ header {
     flex-grow: 0;
     text-decoration: none;
 }
+
+.leftbutton:hover {
+    background: #CDA5AD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30.53px;
+
+}
+
+.leftbutton:active {
+    background: #F2B872;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30.53px;
+
+}
     
 
 /* image of self*/
@@ -128,7 +157,7 @@ header {
     width: 1728px;
     height: 2099px;
     left: -8px;
-    margin-top: 999px;
+    margin-top: 874px;
     background-color: #F6EEE5;
     
 
@@ -264,6 +293,21 @@ header {
 
 }
 
+.button:hover {
+    background: #222E4A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30.53px;
+    color: #F6EEE5;
+
+}
+
+.button:active {
+    background: #F2B872;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30.53px;
+
+}
+
 .project1 img {
     position: absolute;
     justify-content: right;
@@ -298,25 +342,30 @@ header {
 /* footer*/
 
 footer {
-    display: inline-block;
     position: relative;
     bottom: 0px;    
     left: -8px;
-    width: 1728px;
-    height: 385px;   
+    width: 100%;
+    height: 399px;   
     background: #CDA5AD;
     text-align: center;   
     
 }
 
 .footerConnect img{
+    position: absolute;
     left: 650px;
-
+    top: 24px;
 }
  
 .footerLinks img {
-    padding: 30px;
+    position: relative;
+    float: left;
+    padding: 5px;
+    top: 193px;
+    left: 780px;
 }
+
 
 /* Copyright © 2023 phdesigns. All Rights Reserved. */
 
@@ -328,7 +377,7 @@ p {
     top: 327px;
     display: flex;
     justify-content: center;
-    
+    text-align: center;
     color: #222E4A;
 
 
